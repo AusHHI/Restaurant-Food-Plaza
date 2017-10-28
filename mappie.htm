@@ -1,0 +1,32 @@
+<! DOCTYPE html>
+
+                    <html>
+                            <head>
+                                    <style>
+                                            #map{
+                                                    height: 50%;
+                                                    width: 50%;
+                                                    background-color: grey;
+                                            }
+                                    </style>
+                            </head>
+							<body>
+                                    <h3> My Google Maps Demo</h3>
+                                    <div id="map"></div>
+                                    <script>
+                                            function initMap() {
+												var pt = {lat : 24.7213,lng : 84.8568 }
+												var map =new google.maps.Map(document.getElementById('map'),{
+													zoom: 4,
+													center : pt
+												});
+												var marker =new google.maps.Marker({
+													position: pt,
+													map: map
+												});
+											}
+                         </script>-->
+                        <script async defer src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEYCODE&callback=initMap">
+                        </script>
+						</body>
+						</html>
